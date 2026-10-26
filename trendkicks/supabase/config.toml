@@ -1,0 +1,19 @@
+project_id = "trendkicks"
+
+# Local Supabase development; set Confirm email OFF in the hosted dashboard too.
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+[functions.create-invoice]
+verify_jwt = false
+
+[functions.xendit-webhook]
+verify_jwt = false
+
+# Each handler verifies a user token or the private scheduled-job secret itself.
+[functions.upload-review-photo]
+verify_jwt = false
+
+[functions.store-jobs]
+verify_jwt = false

@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node database_test.mjs",
+    "preview": "node preview_server.mjs",
+    "test:postgres": "node real_database_test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "pg": "^8.23.1"
+  }
+}
